@@ -1,4 +1,4 @@
-TECHUPDATE
+TechUpdate
 
 TechUpdate is the static HTML page that demonstrates the use of HTML5,JavaScript and CSS3 with some important features such as
 
