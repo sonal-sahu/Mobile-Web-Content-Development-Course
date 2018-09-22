@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TechUpdate:Technology News</title>
+
+		<style>
+		#maincontainer{
+			width: 100%;
+			height: 100%;
+			margin:auto;
+		}
+		
+		body{
+			width: 100%;
+			margin:auto;
+		}
+		.header {
+			width: 100%;
+			margin:0 auto;
+			top: 0;
+			position: fixed;
+			background: #45484d; 
+			background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); 
+			background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); 
+			background: linear-gradient(to bottom, #45484d 0%,#000000 100%); 
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); 
+
+			
+		}
+
+		.container{
+			width: 85%;
+			margin:0 auto;
+		}
+
+		.logo {
+			float: left;
+			font-family: "Helvetica";
+			font-size: 17px;
+			width: 50%;
+		}
+
+		.logo h1 {
+				transition: 1s;
+				color: white;
+			}
+
+		.logo h1:hover{
+				color: #52b152;
+			}
+
+		.menu{
+			width: 50%;
+			float: left;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.menu ul li {
+			list-style: none;
+			float: left;
+			padding-top: 20px;
+			padding:13px;
+			transition: 1s;
+			font-size: 15px;
+		}
+
+		.menu ul{
+			float: right;
+			margin-right: 5%; 
+		}
+		
+		a:hover {
+			color: #52b152;  
+			text-decoration: solid
+		}	
+
+			.imageHeader{
+				width: 100%;
+				height:20%; 
+			}
+
+			.imgFit {
+				object-fit: fit;
+				object-position: center center;
+				padding-top: 51px;
+			}
+
+			#latestNewsHeader{
+				width:100%;
+
+			}
+
+			main{
+				width: 100%;
+				margin:0 auto;
+				overflow: hidden;
+			}
+
+			.col{
+				width: 32%;
+				height: 490px;
+				float: left;
+				text-align: left;
+			}
+			footer{
+				clear: both;
+				margin:0 auto;
+				text-align: center;
+				width: 100%;
+				height: 40px;
+				color: white;
+				padding-top: 16px;
+				background: #45484d; 
+				background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+				background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); 
+				background: linear-gradient(to bottom, #45484d 0%,#000000 100%); 
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); 
+			}
+
+			.col1{
+			padding: 1px;	
+			}
+
+			.col2{
+				padding: 1px;	
+			}
+
+			.col3{
+				padding: 1px;	
+			}
+
+			@media only screen and (max-width: 768px){
+
+				.col1 , .col2 {
+					width: 50%;
+					float: left;
+				}
+				.col3{
+					width: 100%;
+					float: left;
+
+				}
+				
+			}
+
+			@media only screen and (max-width: 480px){
+				.col{
+					width:100%;
+					float:none;
+					clear:both;
+				}
+			}
+			.btndiv{
+				width: 100%;
+				height: 50px;
+				float: left;
+			}
+
+		.doBtn {
+				
+				
+				color: black;
+				padding: 8px 12px;
+				cursor: pointer;
+				border: none;
+		    	border-radius: 4px;
+				transition: all 0.1s ease-in-out;
+				float: left;
+				clear: both;
+				background: #b4ddb4; 
+				background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); 
+				background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); 
+				background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); 
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); 
+			}
+
+				.doBtn:hover{
+				
+			
+				color:black;
+				font-weight: bold;
+				font-style: normal;
+				background: #b4ddb4; 
+				background: -moz-linear-gradient(bottom, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); 
+				background: -webkit-linear-gradient(bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); 
+				background: linear-gradient(to top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); 
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#b4ddb4',GradientType=0 ); 
+			}	
+
+		#moreImagesCol {
+			width: 32%;
+			margin:0 auto;
+			float: left;
+			
+		}
+		.imageHeader{
+			-webkit-box-shadow: 13px 10px 14px 0px rgba(101,102,112,1);
+			-moz-box-shadow: 13px 10px 14px 0px rgba(101,102,112,1);
+			box-shadow: 13px 10px 14px 0px rgba(101,102,112,1);
+		}
+
+		</style>
+		
+	</head>
+	<body>
+		<div id="maincontainer">
+		<div class="header">
+			<div class="container">
+				<div class="logo">	
+					<h1>TechUpdate</h1>
+				</div>
+
+				<div class="menu">
+				<ul>
+					<li><a href="index.html" style="font-size: 20px;">Home</a></li>
+					<li><a href="contactMe.html" style="font-size: 20px;">Contact Us</a></li>
+
+				</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="imageHeader">
+			<img src="https://techcrunch.com/wp-content/uploads/2016/06/snapchat-ads.png?w=1390&crop=1" width="100%" height="321" class="imgFit" />
+
+		</div>
+
+		<div class="container">
+			<main>
+			<div id="latestNewsHeader">
+				<h3 style="color:black;">The Latest</h3>
+
+			</div>
+
+			<div class="col col1">
+				
+				<img src="https://techcrunch.com/wp-content/uploads/2017/02/fblite.jpg?w=300&h=160&crop=1" height="150">
+				<h3>Facebook Lite adds additional crisis response tools</h3>
+				<p align="left">Facebook  Lite, the social network's product for people in areas with low connectivity or limited internet, is making Community Help available to people in more than 100 countries. Facebook Lite uses less data, and installs and loads faster than the standard Facebook app. Facebook Lite also works on lower-end devices and slower internet networks</p>
+			</div>
+
+			<div class="col col2">
+				
+				<img src="https://techcrunch.com/wp-content/uploads/2017/12/instagram-newsletter.jpg?w=1390&crop=1"
+				height="150">
+				<h3>Instagram is testing video tagging</h3>
+				<p align="left" style="padding-top: 19px">Instagram  is testing a way to allow users to tag their friends in their video posts, not just in photos, TechCrunch has learned and the company confirmed. The option works similarly to tagging photos, but instead of pressing the small icon at the bottom left to see the list of tagged names appear over top of the content-something that would be more difficult with videos-the button links to a list of tagged people.</p>
+			</div>
+
+			<div class="col col3">
+				
+				<video height="150" controls autoplay muted>
+  				<source src="steveVideo.mp4" type="video/mp4">
+  					Your browser does not support HTML5 video.
+				</video>
+				<h3>How Steve Jobs thought Different with Ken Kocienda | Disrupt SF 2018</h3>
+				<p align="left">Hear from a retired 15-year Apple employee and author of the just published book,"Creative Selection: Inside Apple's Design Process During the Golden Age of Steve Jobs" on Apple's creative process.</p>
+			</div>
+
+			<div class="btndiv">
+				<button class="doBtn" onclick="hidediv();">Learn More</button>
+			</div>
+
+			<div id="moreImagesCol" style="display:none"> 
+				<img src="https://techcrunch.com/wp-content/uploads/2018/09/apple-event-2018.png?w=1390&crop=1" height="150">
+				<h3>Apple's iPhone event will be live streamed on Twitter for the first time</h3>
+				<p align="left">Apple's iPhone press event will be live streamed on Twitter for the first time, TechCrunch has confirmed. This news backs up an earlier report from last month, which claimed Apple would expand the ability to watch the event to Twitter's platform, instead of only through Safari and Apple TV or Microsoft Edge on Windows 10, as in the past.</p>
+			</div>
+
+
+
+			</main>
+
+		</div>
+
+		<footer>
+			&copy; 2018 Sonal Sahu
+			</footer>
+
+	</div>
+
+		<script type="text/javascript">
+
+			function hidediv() {
+				
+				var e=document.getElementById("moreImagesCol");
+				
+				if(e.style.display=='block')
+						e.style.display='none';
+				
+				else
+					e.style.display='block';
+				}
+
+		</script>
+	</body>
+</html>
